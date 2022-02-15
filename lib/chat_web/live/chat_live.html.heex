@@ -1,0 +1,17 @@
+
+<div>
+    <textarea style="width: 757px; height: 429px;">
+    <%= for message <- @messages do %>
+    <%=  "anonymous: " <> message.body  %>
+    <%end%>
+    </textarea>
+</div>
+
+
+
+<div>
+<form action="#" phx-submit="send", autocomplete="off">
+    <%= text_input :message, :body, placeholder: "type something..",  autocomplete: false  %>
+    <%= submit "send", phx_disable_with: "sending message.." %>
+</form>
+</div>
