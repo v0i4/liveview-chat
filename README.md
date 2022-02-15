@@ -1,4 +1,4 @@
-# Chat
+# realtime chat with elixir + phoenix liveview
 
 To start your Phoenix server:
 
